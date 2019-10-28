@@ -26,8 +26,8 @@ public class MyCode {
     public static void main(String[] args) {
 
         //simple test
-        List<Good> goods = new ArrayList<Good>();
-        //Set<Good> goods = new HashSet<Good>();
+        //List<Good> goods = new ArrayList<Good>();
+        Set<Good> goods = new HashSet<Good>();
         Good good1 = new Good("g12", 10);
         goods.add(good1);
         Good good2 = new Good("g3", 10);
@@ -57,10 +57,10 @@ public class MyCode {
     }
 
 
-    public static Good[] sortGoods(List<Good> goods) {
+    public static Good[] sortGoods(Set<Good> goods) {
         //TODO: write your code here
         //final Checker checker = new Checker();
-        Collections.sort( goods, new Checker());
+        //Collections.sort( goods, new Checker());
         return goods.toArray(new Good[goods.size()]);
     }
 
